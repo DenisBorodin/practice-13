@@ -28,7 +28,7 @@ public class CheckAddProduct {
         Thread.sleep(1000);
 
         String newItem = "SuperPuperDuck";
-        String relativePath = ".Duck.jpg";
+        String relativePath = "./src/test/resources/superDuck.jpeg";
         Path filePath = Paths.get(relativePath);
         String absolutePath = filePath.normalize().toAbsolutePath().toString();
 
@@ -44,7 +44,6 @@ public class CheckAddProduct {
         checkSuperDuck();
 
         quit();
-
 
     }
 
